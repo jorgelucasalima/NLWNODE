@@ -14,7 +14,16 @@ const app = express();
 // response / res = tudo que vamos retornar para o usuário
 
 
-app.get("/", (req, res) => {})
+app.get("/", (req, res) => {
+    return res.send("Olá nlw 05");
+});
+
+
+app.post("/users", (req, res) => {
+    return res.json({
+        message: "usuário salvo com sucesso"
+    });
+});
 
 
 
